@@ -1,0 +1,1038 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Helvetica', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav_superior {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.logo svg {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.navmenu {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.navmenu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.navmenu a:hover {
+    color: rgb(54, 137, 230);
+}
+
+.navredes {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.redesicon {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesicon:hover {
+    color: rgb(54, 137, 230);
+}
+
+.contenido1 {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.textocontenido1 {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+}
+
+.textocontenido1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.textocontenido1 p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.botonescontenido1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.botonescontenido1 a {
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.botonescontenido1 .boton1 {
+    background-color: orange;
+    transition: background-color 0.2s ease;
+}
+
+.botonescontenido1 .boton1:hover {
+    background-color: rgb(234, 181, 83);
+}
+
+.botonescontenido1 .boton2 {
+    background-color: green;
+    transition: background-color 0.2s ease;
+}
+
+.botonescontenido1 .boton2:hover {
+    background-color: rgb(94, 184, 104);
+}
+
+.botonescontenido1 .boton3 {
+    background-color: red;
+    transition: background-color 0.2s ease;
+}
+
+.botonescontenido1 .boton3:hover {
+    background-color: #c04a4a;
+}
+
+.botonescontenido1 .boton4 {
+    background-color: purple;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botonescontenido1 .boton4:hover {
+    background-color: #d846cf;
+}
+
+.botonescontenido1 .boton5 {
+    background-color: rgb(54, 137, 230);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botonescontenido1 .boton5:hover {
+    background-color: #1b7291;
+}
+
+.botonescontenido1 .boton6 {
+    background-color: gray;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botonescontenido1 .boton6:hover {
+    background-color: #7b7b7b;
+}
+
+.textocontenido2 {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.textocontenido2 h2 {
+    font-size: 2rem;
+}
+
+.textocontenido2 p {
+    font-size: 1.1rem;
+}
+
+.contenido2 {
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+}
+
+.contenido2 .arriba {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contenido2 .abajo {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.arriba .git,
+.arriba .patreon,
+.abajo .paypal,
+.abajo .liberapay {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.git .botongit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(226, 141, 13);
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.git .botongit:hover {
+    background-color: rgb(200, 110, 10);
+}
+
+.patreon .botonpatreon {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(229, 229, 229);
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.patreon .botonpatreon:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.paypal .botonpaypal {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(196, 196, 196);
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.paypal .botonpaypal:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.liberapay .botonliberapay {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(196, 196, 196);
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.liberapay .botonliberapay:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.git i,
+.paypal i {
+    font-size: 64px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.git p,
+.patreon p,
+.paypal p,
+.liberapay p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+img.logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contenido3_0 {
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 100px;
+    padding: 0 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido3_0 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: black;
+}
+
+.contenido3 {
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.textocontenido3 {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+
+.textocontenido3 p {
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.textocontenido3 .botonaprender {
+    color: rgb(54, 137, 230);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.textocontenido3 .botonaprender:hover {
+    text-decoration: underline;
+}
+
+.botonestra {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.botonestra button {
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botonestra .botonunir {
+    background-color: rgb(196, 196, 196);
+    color: black;
+}
+
+.botonestra .botonunir:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.botonestra .botontraducir {
+    background-color: green;
+    color: white;
+}
+
+.botonestra .botontraducir:hover {
+    background-color: rgb(94, 184, 104);
+}
+
+.imagencontenido3 {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.imagencontenido3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.contenido4_0 {
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 100px;
+    padding: 0 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido4_0 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenido4 {
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.textocontenido4_1 {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.textocontenido4_1 h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.textocontenido4_1 p {
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.botonessoporte {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.textocontenido4_2 .botonessoporte {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.botonessoporte button {
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    max-width: 400px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.botonpreguntas{
+    background-color: rgb(196, 196, 196);
+    color: black;
+}
+
+.botonrespuestas{
+    background-color: rgb(208, 25, 25);
+    color: white;
+}
+
+.botonpreguntas:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.botonrespuestas:hover{
+    background-color: rgb(236, 98, 98);
+}
+
+.textocontenido4_2 {
+    flex: 1;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.textocontenido4_2 h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.textocontenido4_2 p {
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.botonconceptos {
+    background-color: rgb(191, 191, 191);
+    color: black;
+}
+
+.botondocumentacion {
+    background-color: rgb(191, 191, 191);
+    color: black;
+}
+
+.botonconceptos:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.botondocumentacion:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.contenido5_0 {
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegador {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.barrasuperior {
+    background: #e8e8e8;
+    padding: 10px 15px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+
+
+.barranavegacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flecha {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+
+.barraurl {
+    flex: 1;
+    height: 30px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pantallacomp {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.pantallacomp:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.contenidonavegador {
+    padding: 80px 60px;
+    text-align: center;
+    background: white;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidonavegador h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.contenidonavegador p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.botonesdesarrollo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.botonesdesarrollo button {
+    padding: 14px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.botonproblema {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botongithub {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.contenido6{
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textocontenido6 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: black;
+}
+
+.textocontenido6 p{
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.textocontenido6 .botonesdesarrolo{
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.textocontenido6 .botonesdesarrolo:hover{
+    text-decoration: underline;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.botenesdesarrollo {
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button .guia{
+    background-color: rgb(174, 174, 174);
+    color: black;
+    transition: background-color 0.2s ease;
+}
+
+.button .guia:hover{
+    background-color: rgb(210, 210, 210);
+    color: white;
+}
+
+.button .codigo{
+    background-color: rgb(35, 98, 205);
+    color: black;
+    transition: background-color 0.2s ease;
+}
+
+.button .codigo:hover{
+    background-color: rgb(98, 151, 222);
+    color: white;
+}
+
+.contenido6 {
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 80px 30px;
+}
+
+.textocontenido6 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.textocontenido6 h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.textocontenido6 p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.botonescontenido6 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botonescontenido6 button {
+    padding: 14px 32px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.botonguia {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botonguia:hover {
+    background: #d0d0d0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.botoncodigo {
+    background: rgb(54, 137, 230);
+    color: white;
+}
+
+.botoncodigo:hover {
+    background: rgb(40, 110, 190);
+    box-shadow: 0 6px 20px rgba(54, 137, 230, 0.4);
+}
+
+.botonescontenido6 button:active {
+    transform: translateY(0);
+}
+
+.contenido7 {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 80px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.columna {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.columna h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.columna p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.columna a.enlaceaprende {
+    color: rgb(54, 137, 230);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.columna a.enlaceaprende:hover {
+    text-decoration: underline;
+}
+
+.columna button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+}
+
+.botonconsulta {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botonconsulta:hover {
+    background: #d0d0d0;
+}
+
+.botoninformes {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botoninformes:hover {
+    background: #d0d0d0;
+}
+
+.botonpublique {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botonpublique:hover {
+    background: #d0d0d0;
+}
+
+
+.contenido8{
+    overflow-x: hidden;
+    padding: 4px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenido8 h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.contenido8 p{
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.contenido8 a.enlaceaprende2 {
+    color: rgb(54, 137, 230);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contenido8 a.enlaceaprende2:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.contenido9 {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 80px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.columna2 {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.columna2 h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.columna2 p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+.columna2 button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.columna2 i {
+    font-size: 64px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.botondiseno {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botondiseno:hover {
+    background: #d0d0d0;
+}
+
+.botonestilos {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botonestilos:hover {
+    background: #d0d0d0;
+}
+
+.botoniconos {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.botoniconos:hover {
+    background: #d0d0d0;
+}
+
+.columna2 img {
+    height: 64px;
+    width: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
