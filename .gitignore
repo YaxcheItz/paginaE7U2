@@ -1,0 +1,24 @@
+# Archivos temporales
+*.tmp
+*.temp
+*~
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de imágenes muy grandes (opcional)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Archivos de respaldo
+*.bak
+*.backup
+
+# Carpetas de dependencias
+node_modules/
+.cache/
