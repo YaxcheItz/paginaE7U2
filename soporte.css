@@ -1,0 +1,312 @@
+/* reseteo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: #111;
+  color: #e7e7e7;
+  line-height: 1.5;
+}
+
+/* contenedor general */
+.contenedor {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* cabecera */
+header.cabecera {
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header.cabecera .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  margin-left: 28px;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 6px 0;
+  font-weight: 500;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.menu a.activo {
+  color: #fff;
+}
+
+.iconos {
+  display: flex;
+  gap: 16px;
+}
+
+.icono {
+  width: 18px;
+  height: 18px;
+  background: #333;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+/* hero */
+.hero {
+  background: #111;
+  padding: 60px 20px 40px;
+}
+
+.texto-centro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  font-size: 15px;
+  color: #bbb;
+  line-height: 1.7;
+}
+
+/* aplicaciones */
+.aplicaciones {
+  background: #111;
+  padding: 40px 20px;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 48px 32px;
+  justify-items: center;
+  margin-bottom: 32px;
+}
+
+.tarjeta-app {
+  background: transparent;
+  text-align: center;
+  padding: 20px 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  border-radius: 16px;
+}
+
+.img-app {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #181818;
+}
+
+.tarjeta-app h3 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #e0e0e0;
+  margin-top: 6px;
+}
+
+.centro-enlace {
+  text-align: center;
+}
+
+.enlace-ayuda {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* documentación */
+.documentacion {
+  background: #0d0d0d;
+  padding: 56px 20px;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.documentacion h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  letter-spacing: -0.3px;
+}
+
+.cuadricula-docs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.tarjeta-doc {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.img-doc {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  display: block;
+  object-fit: contain;
+}
+
+.tarjeta-doc h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.tarjeta-doc p {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.6;
+}
+
+/* pagos */
+.pagos {
+  background: #111;
+  padding: 56px 20px;
+  text-align: center;
+}
+
+.pagos h2 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: -0.3px;
+}
+
+.pagos p {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  font-size: 15px;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.boton-contacto {
+  display: inline-block;
+  background: #3399ff;
+  color: #001a33;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* pie */
+.pie {
+  background: #0a0a0a;
+  padding: 32px 20px;
+  border-top: 1px solid #1f1f1f;
+}
+
+.pie .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copy {
+  font-size: 13px;
+  color: #666;
+}
+
+.idioma {
+  font-size: 13px;
+  color: #666;
+}
+
+.enlaces-pie {
+  display: flex;
+  gap: 16px;
+}
+
+.enlaces-pie a {
+  color: #888;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cuadricula-docs {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    gap: 16px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .cuadricula {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .pie .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}
