@@ -10,14 +10,14 @@ body {
   color: #333;
 }
 
-/* =============CONTENEDOR PRINCIPAL=========== */
+/* CONTENEDOR PRINCIPAL */
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* ========HEADER SUPERIOR AZUL========== */
+/* HEADER SUPERIOR AZUL*/
 .navAzul {
   width: 100%;
   height: 38px;
@@ -37,21 +37,21 @@ body {
   width: 100%;
 }
 
-/* ===========CONTENEDOR IZQUIERDO (Logo + Enlaces)======== */
+/* CONTENEDOR IZQUIERDO (Logo + Enlaces) */
 .contIzquierdoAzul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* =========LOGO========= */
+/* LOGO */
 .logo {
   height: 24px;
   width: auto;
   display: block;
 }
 
-/* =============ENLACES DEL MENÚ (IZQUIERDA)=========== */
+/* ENLACES DEL MENÚ (IZQUIERDA)*/
 .menuSuperior {
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@ body {
   opacity: 0.8;
 }
 
-/* =========ICONOS (DERECHA)========= */
+/* ICONOS (DERECHA) */
 .contDerechoIconos {
   display: flex;
   align-items: center;
@@ -87,7 +87,7 @@ body {
   opacity: 0.8;
 }
 
-/* =========NAV INFERIOR GRIS====== */
+/* NAVEGACION INFERIOR GRIS */
 .subnav {
   position: sticky;
   top: 0;
@@ -134,12 +134,11 @@ body {
   margin-left: auto;
 }
 
-/* =========CONTENIDO PRINCIPAL===== */
+/* CONTENIDO PRINCIPAL */
 .contenido-principal {
   padding-bottom: 60px;
 }
 
-/* ===============SECCIÓN HERO========== */
 .seccion-hero {
   max-width: 800px;
   margin: 0 auto;
@@ -160,7 +159,7 @@ body {
   line-height: 1.7;
 }
 
-/* =========SECCIÓN DISPOSITIVOS========== */
+/* SECCIÓN DISPOSITIVOS*/
 .seccion-dispositivos {
   padding: 60px 0;
 }
@@ -250,7 +249,7 @@ body {
   text-align: left;
 }
 
-/* =======SECCIÓN PRODUCTOS====== */
+/* SECCIÓN PRODUCTOS*/
 .seccion-productos {
   padding: 60px 0;
 }
@@ -290,7 +289,7 @@ body {
 
 .tarjeta-producto img {
   width: 100%;
-  height: 280px;
+  height: 340px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -314,7 +313,7 @@ body {
   color: inherit;
 }
 
-/* ====SECCIÓN ENVÍOS===== */
+/*SECCIÓN ENVÍOS */
 .seccion-envios {
   padding: 80px 0;
   background-color: #fff;
@@ -343,7 +342,7 @@ body {
   line-height: 1.8;
 }
 
-/* ======= FOOTER ======= */
+/* FOOTER  */
 .footer {
   width: 100%;
   background-color: #f9fafb;
@@ -375,4 +374,126 @@ body {
   text-decoration: none;
   font-size: 11px;
   transition: color 0.2s ease;
+}
+
+@media (max-width: 1024px) {
+  .seccion-hero h1 {
+    font-size: 42px;
+  }
+  
+  .cuadricula-productos {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .tarjeta-producto img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navAzul {
+    height: auto;
+    padding: 8px 0;
+  }
+  
+  .menuSuperior {
+    display: none;
+  }
+  
+  .logo {
+    height: 20px;
+  }
+  
+  .navegacion-categorias {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .enlace-categoria {
+    font-size: 13px;
+  }
+  
+  .seccion-hero h1 {
+    font-size: 32px;
+  }
+  
+  .seccion-hero p {
+    font-size: 16px;
+  }
+  
+  .cuadricula-productos {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .tarjeta-producto img {
+    height: 180px;
+  }
+  
+  .tarjeta-producto h3 {
+    font-size: 14px;
+  }
+  
+  .cuadricula-dispositivos {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 0 12px;
+  }
+  
+  .seccion-hero h1 {
+    font-size: 26px;
+  }
+  
+  .seccion-hero {
+    padding: 40px 15px;
+  }
+  
+  .cuadricula-productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .tarjeta-producto {
+    padding: 8px;
+  }
+  
+  .tarjeta-producto img {
+    height: 140px;
+  }
+  
+  .tarjeta-producto h3 {
+    font-size: 12px;
+  }
+  
+  .precio {
+    font-size: 13px;
+  }
+  
+  .navegacion-categorias {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .intro-dispositivos h2,
+  .seccion-productos .intro-seccion h2,
+  .intro-envios h2 {
+    font-size: 28px;
+  }
 }
